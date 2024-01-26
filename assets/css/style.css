@@ -198,3 +198,19 @@ Estilos seccion destacados
 .card-body {
   background-color: var(--color-bg-card);
 }
+
+/*
+Estilos seccion contacto
+*/
+.contacto_titulo {
+  font-family: var(--font-titulos-secciones);
+}
+
+form {
+  background-color: var(--color-bg-card);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#mensajeArea {
+  resize: none;
+}
