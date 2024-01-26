@@ -79,3 +79,24 @@ function scrollToSection(evento) {
 for (let itemli of itemsMenu) {
   itemli.children[0].addEventListener("click", scrollToSection);
 }
+/*-----------------------------------------------------------------*/
+/*
+Agrego funcionalidad scroll top button
+*/
+window.onscroll = function () {
+  mostrarOcultarBoton();
+};
+
+function mostrarOcultarBoton() {
+  var botonScroll = document.getElementById("scrollBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    botonScroll.style.display = "block";
+  } else {
+    botonScroll.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // Para navegadores Safari
+  document.documentElement.scrollTop = 0; // Para navegadores Chrome, Firefox, IE y Opera
+}

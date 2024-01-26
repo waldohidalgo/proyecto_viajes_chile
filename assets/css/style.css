@@ -2,7 +2,7 @@
   --font-logo: "Caveat", cursive;
   --font-contenido: "Lato", sans-serif;
   --font-titulos-secciones: "Playfair Display", serif;
-  --font-slider-carrusel:font-family: 'Vollkorn', serif;
+  --font-slider-carrusel: "Vollkorn", serif;
   --color-bg: rgb(104, 215, 39);
   --color-bg-card: rgb(104, 215, 39, 0.2);
 }
@@ -131,26 +131,28 @@ Estilos Seccion Carrusel
   text-align: center;
   position: relative;
   top: 20%;
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     top: 30%;
   }
 }
 
-.carousel-item_contenedor1,.carousel-item_contenedor2,.carousel-item_contenedor3 {
+.carousel-item_contenedor1,
+.carousel-item_contenedor2,
+.carousel-item_contenedor3 {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   width: 80%;
-  margin-inline:auto ;
+  margin-inline: auto;
   padding-block: 1rem;
-  @media screen and (min-width:576px) {
+  @media screen and (min-width: 576px) {
     width: 60%;
   }
   h2 {
     color: white;
     font-family: var(--font-titulos-secciones);
-    
+
     font-size: 2rem !important;
-    @media screen and (min-width:576px) {
+    @media screen and (min-width: 576px) {
       font-size: 3rem !important;
     }
   }
@@ -279,7 +281,7 @@ Estilos footer
 footer {
   background-color: black;
   color: white;
-  
+
   a {
     color: white;
     text-decoration: none;
@@ -306,4 +308,36 @@ footer {
 }
 .fa-brands:hover {
   color: var(--color-bg);
+}
+/* 
+Estilo del Scroll Boton
+*/
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: var(--color-bg);
+  color: #fff;
+  border: 1px solid black;
+  padding: 1px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
+  i {
+    font-size: 24px;
+    color: black;
+  }
+}
+
+#scrollBtn:hover {
+  background-color: black;
+  border-color: white;
+  i {
+    color: white;
+  }
 }
