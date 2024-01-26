@@ -1,0 +1,163 @@
+:root {
+  --font-logo: "Caveat", cursive;
+  --font-contenido: "Lato", sans-serif;
+  --font-titulos-secciones: "Playfair Display", serif;
+  --color-bg: #68d727;
+}
+
+* {
+  font-family: var(--font-contenido);
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: var(--color-bg);
+
+  a {
+    color: black !important;
+    font-weight: 600 !important;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 1) !important;
+}
+
+.navbar-brand {
+  font-family: var(--font-logo);
+  font-size: 2rem !important;
+  img {
+    width: 41px;
+    vertical-align: text-top;
+  }
+}
+
+.navbar_altura {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar > div {
+  @media screen and (max-width: 265px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.estilo_menu {
+  border: 2px solid white;
+  a {
+    color: white !important;
+    font-weight: 800;
+    text-decoration: underline;
+  }
+}
+
+/*
+-----------------------------------------------------
+Estilos Seccion Carrusel
+*/
+
+.hero-section {
+  height: 75vh;
+}
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item {
+  background-size: cover;
+  max-width: 1500px;
+  background-position-x: center;
+
+  background-attachment: fixed;
+}
+.carousel-item1 {
+  background-image: url("../img/carousel1.jpg");
+}
+.carousel-item2 {
+  background-image: url("../img/carousel2.jpg");
+}
+.carousel-item3 {
+  background-image: url("../img/carousel3.jpg");
+}
+
+.bullet {
+  border-radius: 50%;
+  width: 25px !important;
+  height: 25px !important;
+  background-size: cover;
+  border: 2px solid white !important;
+}
+.bullet1 {
+  background-image: url("../img/carousel1.jpg");
+}
+.bullet2 {
+  background-image: url("../img/carousel2.jpg");
+}
+
+.bullet3 {
+  background-image: url("../img/carousel3.jpg");
+}
+.carousel-control-prev-icon {
+  background-image: url("../img/icons8-doble-izquierda.gif") !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+  padding: 5px !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../img/icons8-doble-derecha.gif") !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+  padding: 5px !important;
+}
+
+/*
+-----------------------------------------------------
+Estilos Seccion Quienes Somos
+*/
+
+.quienes_somos_titulo {
+  font-family: var(--font-titulos-secciones);
+}
+.accordion-body strong {
+  font-family: var(--font-titulos-secciones);
+}
+.accordion-button::after {
+  background-image: url("../img/arriba.gif") !important;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-position: center;
+  width: 2rem !important;
+  height: 2rem !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-bg) !important;
+  font-family: var(--font-titulos-secciones) !important;
+  font-weight: 700;
+  color: black !important;
+}
+.accordion-button:focus {
+  border: 1px solid black !important;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 1) !important;
+}
+
+/*
+Estilos para quienes somos contenedor iconos e hijos
+*/
+.quienes_somos_contenedor_parrafos {
+  gap: 10px;
+  .col {
+    width: calc(33% - 10px);
+    text-align: center;
+  }
+  .quienes_somos_contenedor_parrafos_icono {
+    border: 1px solid black;
+  }
+}
