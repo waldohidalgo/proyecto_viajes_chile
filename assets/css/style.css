@@ -210,7 +210,19 @@ form {
   background-color: var(--color-bg-card);
   border: 1px solid black;
   border-radius: 10px;
+  max-width: 600px;
 }
 #mensajeArea {
   resize: none;
 }
+
+.boton_submit_formulario {
+  background-color: var(--color-bg) !important;
+  color: black !important;
+  border: 1px solid black !important;
+  font-family: var(--font-titulos-secciones);
+}
+
+/*
+Estilos footer
+*/

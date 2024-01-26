@@ -382,8 +382,8 @@
         </div>
       </section>
       <section class="contacto py-3 px-3 px-md-5 text-center">
-        <h2 class="contacto_titulo">Contacto</h2>
-        <form class="p-3">
+        <h2 class="contacto_titulo fw-bold mb-3">Contacto</h2>
+        <form class="p-3 mx-auto">
           <div class="mb-3">
             <label for="inputName" class="form-label">Nombre</label>
             <input
@@ -413,7 +413,15 @@
               placeholder="Escribe aquí el mensaje"
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button
+            type="submit"
+            class="btn boton_submit_formulario fw-bold"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Haz click aquí para enviar el mensaje"
+          >
+            Enviar Mensaje
+          </button>
         </form>
       </section>
     </main>
