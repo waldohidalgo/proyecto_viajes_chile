@@ -75,7 +75,7 @@ function scrollToSection(evento) {
     });
   }
 }
-//Utilizo ciclo for para recorrer anchor del menu y asignarles un event listener
+//Utilizo ciclo for para recorrer anchor del menu y asignarles un event listener a cada elemento del menu
 for (let itemli of itemsMenu) {
   itemli.children[0].addEventListener("click", scrollToSection);
 }
