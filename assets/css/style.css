@@ -2,10 +2,13 @@
   --font-logo: "Caveat", cursive;
   --font-contenido: "Lato", sans-serif;
   --font-titulos-secciones: "Playfair Display", serif;
+  --font-slider-carrusel:font-family: 'Vollkorn', serif;
   --color-bg: rgb(104, 215, 39);
   --color-bg-card: rgb(104, 215, 39, 0.2);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   font-family: var(--font-contenido);
   box-sizing: border-box;
@@ -70,6 +73,12 @@ Estilos Seccion Carrusel
   height: 100%;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  top: 50% !important;
+  bottom: auto !important;
+}
+
 .carousel-item {
   background-size: cover;
   max-width: 1500px;
@@ -118,6 +127,46 @@ Estilos Seccion Carrusel
   padding: 5px !important;
 }
 
+.carousel-item_contenedor {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  @media screen and (min-width:768px){
+    top: 30%;
+  }
+}
+
+.carousel-item_contenedor1,.carousel-item_contenedor2,.carousel-item_contenedor3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 80%;
+  margin-inline:auto ;
+  padding-block: 1rem;
+  @media screen and (min-width:576px) {
+    width: 60%;
+  }
+  h2 {
+    color: white;
+    font-family: var(--font-titulos-secciones);
+    
+    font-size: 2rem !important;
+    @media screen and (min-width:576px) {
+      font-size: 3rem !important;
+    }
+  }
+  button {
+    border: 2px solid white;
+
+    img {
+      width: 1.45rem;
+      aspect-ratio: 1/1;
+      background-color: white;
+      border-radius: 50%;
+      padding: 2px;
+      margin-top: -5px;
+    }
+  }
+}
 /*
 -----------------------------------------------------
 Estilos Seccion Quienes Somos
@@ -230,6 +279,7 @@ Estilos footer
 footer {
   background-color: black;
   color: white;
+  
   a {
     color: white;
     text-decoration: none;

@@ -53,12 +53,29 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 /*-----------------------------------------------------------------*/
 /*
-Habilitacion de popover (creacion de objetos popover)
+Desplazamiento a secciones pero personalizado menos la altura del header
 */
+function scrollToSection(evento) {
+  evento.preventDefault();
 
-const popoverTriggerList = [].slice.call(
-  document.querySelectorAll('[data-bs-toggle="popover"]')
-);
-const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl);
-});
+  const alturaHeader =
+    document.getElementsByClassName("navbar_altura")[0].offsetHeight;
+
+  var targetElemento = document.getElementById(
+    evento.target.getAttribute("href").substring(1)
+  );
+
+  if (targetElemento) {
+    // Calcula la posición de desplazamiento desde el top y le resto la altura del header ya que este es fixed
+    var offset = targetElemento.offsetTop - alturaHeader;
+
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth",
+    });
+  }
+}
+//Utilizo ciclo for para recorrer anchor del menu y asignarles un event listener
+for (let itemli of itemsMenu) {
+  itemli.children[0].addEventListener("click", scrollToSection);
+}

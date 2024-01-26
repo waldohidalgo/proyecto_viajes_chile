@@ -34,6 +34,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
     <title>Viajes Chile</title>
   </head>
   <body>
@@ -65,30 +69,35 @@
               <a
                 class="nav-link"
                 aria-current="page"
-                href="#"
+                href="#principal"
                 title="ir a Pagina Inicio"
                 >Home</a
               >
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link" href="#" title="Ir a Quienes Somos"
+              <a
+                class="nav-link"
+                href="#quienes_somos"
+                title="Ir a Quienes Somos"
                 >Quienes Somos</a
               >
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link" href="#" title="Ir a Destacados"
+              <a class="nav-link" href="#destacados" title="Ir a Destacados"
                 >Destacados</a
               >
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link" href="#" title="Ir a Contacto">Contacto</a>
+              <a class="nav-link" href="#contacto" title="Ir a Contacto"
+                >Contacto</a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section id="principal" class="hero-section">
         <div
           id="carouselHeroSection"
           class="carousel slide"
@@ -125,9 +134,72 @@
             ></div>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item carousel-item1 active"></div>
-            <div class="carousel-item carousel-item2"></div>
-            <div class="carousel-item carousel-item3"></div>
+            <div class="carousel-item carousel-item1 active">
+              <div class="carousel-item_contenedor carousel-item_contenedor1">
+                <h2 class="carousel-item_titulo1 mb-3">
+                  Ofertas imperdibles para estas vacaciones
+                </h2>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Haz Click aquí para ver más detalle"
+                >
+                  <button type="button" class="btn btn-success">
+                    <span
+                      >Ver más detalle
+                      <img
+                        src="./assets/img/icons8-cara-de-fiesta-48.png"
+                        alt="Imagen Celebracion"
+                        srcset=""
+                    /></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item2">
+              <div class="carousel-item_contenedor carousel-item_contenedor2">
+                <h2 class="carousel-item_titulo2">
+                  Destinos ideales para liberar estrés
+                </h2>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Haz Click aquí para ver más detalle"
+                >
+                  <button type="button" class="btn btn-warning">
+                    <span
+                      >Ver más detalle
+                      <img
+                        src="./assets/img/icons8-meditar.png"
+                        alt="Imagen Meditar"
+                        srcset=""
+                    /></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item3">
+              <div class="carousel-item_contenedor carousel-item_contenedor3">
+                <h2 class="carousel-item_titulo3">
+                  Destinos perfectos para aventurer@s
+                </h2>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Haz Click aquí para ver más detalle"
+                >
+                  <button type="button" class="btn btn-light">
+                    <span
+                      >Ver más detalle
+                      <img
+                        src="./assets/img/icons8-mundo.png"
+                        alt="Imagen Mundo"
+                        srcset=""
+                    /></span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           <button
             class="carousel-control-prev"
@@ -161,7 +233,10 @@
           </button>
         </div>
       </section>
-      <section class="quienes_somos px-5 py-3 d-none d-sm-block">
+      <section
+        id="quienes_somos"
+        class="quienes_somos px-5 py-3 d-none d-sm-block"
+      >
         <h2 class="quienes_somos_titulo text-center fw-bold mb-3">
           ¿Quienes Somos?
         </h2>
@@ -280,7 +355,7 @@
           </div>
         </div>
       </section>
-      <section class="destacados py-3 px-3 px-md-5">
+      <section id="destacados" class="destacados py-3 px-3 px-md-5">
         <h2 class="destacados_titulo text-center fw-bold mb-3">Destacados</h2>
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
@@ -381,7 +456,7 @@
           </div>
         </div>
       </section>
-      <section class="contacto py-3 px-3 px-md-5 text-center">
+      <section id="contacto" class="contacto py-3 px-3 px-md-5 text-center">
         <h2 class="contacto_titulo fw-bold mb-3">Contacto</h2>
         <form class="p-3 mx-auto">
           <div class="mb-3">
@@ -392,6 +467,7 @@
               id="inputName"
               aria-describedby="nameHelp"
               placeholder="Escribe aquí tu nombre"
+              required
             />
           </div>
           <div class="mb-3">
@@ -402,6 +478,7 @@
               id="inputAsunto"
               aria-describedby="asuntoHelp"
               placeholder="Escribe aquí el asunto del mensaje"
+              required
             />
           </div>
           <div class="mb-3">
@@ -411,14 +488,16 @@
               id="mensajeArea"
               rows="5"
               placeholder="Escribe aquí el mensaje"
+              required
             ></textarea>
           </div>
+
           <button
             type="submit"
             class="btn boton_submit_formulario fw-bold"
             data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Haz click aquí para enviar el mensaje"
+            data-bs-placement="bottom"
+            title="Haz click aqui para enviar la data"
           >
             Enviar Mensaje
           </button>
@@ -434,7 +513,7 @@
           >
         </div>
         <div class="col">
-          <p>
+          <p class="text-center">
             Sitio Web desarrollado por
             <span class="autor fw-bold">Waldo Hidalgo Oyarce 🚀</span>
           </p>
