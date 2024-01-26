@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------*/
 /*
-Margin top automatico igual a la altura del header
+Padding top automatico igual a la altura del header
 */
 
 const headerNode = document.getElementsByClassName("navbar_altura")[0];
