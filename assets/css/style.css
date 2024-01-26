@@ -226,3 +226,34 @@ form {
 /*
 Estilos footer
 */
+
+footer {
+  background-color: black;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .autor {
+    font-family: var(--font-titulos-secciones);
+    color: yellow;
+  }
+}
+.footer-brand {
+  font-family: var(--font-logo);
+  font-size: 2rem !important;
+
+  img {
+    width: 41px;
+    vertical-align: text-top;
+  }
+}
+.footer-brand:hover {
+  color: aquamarine;
+}
+.fa-brands {
+  font-size: 2rem;
+}
+.fa-brands:hover {
+  color: var(--color-bg);
+}
