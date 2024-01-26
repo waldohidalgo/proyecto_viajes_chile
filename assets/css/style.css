@@ -2,7 +2,8 @@
   --font-logo: "Caveat", cursive;
   --font-contenido: "Lato", sans-serif;
   --font-titulos-secciones: "Playfair Display", serif;
-  --color-bg: #68d727;
+  --color-bg: rgb(104, 215, 39);
+  --color-bg-card: rgb(104, 215, 39, 0.2);
 }
 
 * {
@@ -180,4 +181,20 @@ Estilos seccion destacados
 */
 .destacados_titulo {
   font-family: var(--font-titulos-secciones);
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.badge {
+  cursor: help;
+  border: 1px solid white;
+}
+.card-title {
+  font-family: var(--font-titulos-secciones);
+}
+
+.card-body {
+  background-color: var(--color-bg-card);
 }
