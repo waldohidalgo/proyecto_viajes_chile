@@ -254,6 +254,24 @@ Estilos para quienes somos contenedor iconos e hijos
     padding: 10px 5px;
   }
 }
+
+.quienes_somos_contenedor_parrafos--parrafo2 {
+  display: flex;
+  flex-direction: column;
+  .quienes_somos_contenedor_parrafos_icono {
+    order: 1;
+    transform: rotate(180deg);
+  }
+  p {
+    margin: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top: 1px solid var(--color-bg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}
+
 /*
 Estilos seccion destacados
 */
