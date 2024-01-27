@@ -87,13 +87,13 @@ Estilos Seccion Carrusel
   background-attachment: fixed;
 }
 .carousel-item1 {
-  background-image: url("../img/carousel1.jpg");
+  background-image: url("../img/carousel1.webp");
 }
 .carousel-item2 {
-  background-image: url("../img/carousel2.jpg");
+  background-image: url("../img/carousel2.webp");
 }
 .carousel-item3 {
-  background-image: url("../img/carousel3.jpg");
+  background-image: url("../img/carousel3.webp");
 }
 
 .bullet {
@@ -104,14 +104,14 @@ Estilos Seccion Carrusel
   border: 2px solid white !important;
 }
 .bullet1 {
-  background-image: url("../img/carousel1.jpg");
+  background-image: url("../img/carousel1_bullet.webp");
 }
 .bullet2 {
-  background-image: url("../img/carousel2.jpg");
+  background-image: url("../img/carousel2_bullet.webp");
 }
 
 .bullet3 {
-  background-image: url("../img/carousel3.jpg");
+  background-image: url("../img/carousel3_bullet.webp");
 }
 .carousel-control-prev-icon {
   background-image: url("../img/icons8-doble-izquierda.gif") !important;
