@@ -133,3 +133,13 @@ function popOverAutor(popoverTriggerEl) {
 }
 
 popOverAutor(botonAutor);
+/*-----------------------------------------------------------------
+Desactivar comportamiento por defecto de submit de formulario y muestra de alerta
+*/
+
+const formElement = document.querySelector("#contacto form");
+
+formElement.addEventListener("submit", (evento) => {
+  evento.preventDefault();
+  window.alert("Felicidades, la data se ha enviado con éxito");
+});

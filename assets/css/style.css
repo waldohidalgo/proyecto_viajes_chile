@@ -105,13 +105,12 @@ background-attachment: fixed no tiene soporte en general navegadores
 */
 .background_slider {
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
-section:not(#principal) {
+body section:not(#principal) {
   background-color: white;
 }
 .background_slider1 {
