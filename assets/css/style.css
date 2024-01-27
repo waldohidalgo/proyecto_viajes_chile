@@ -12,11 +12,15 @@ html {
 * {
   font-family: var(--font-contenido);
   box-sizing: border-box;
+
+  position: relative;
 }
 
 .navbar {
   background: var(--color-bg);
-
+  * {
+    background-color: transparent;
+  }
   a {
     color: black !important;
     font-weight: 600 !important;
@@ -80,15 +84,11 @@ Estilos Seccion Carrusel
 }
 
 .carousel-item {
-  background-size: cover;
   max-width: 1500px;
-  background-position-x: center;
+  background-size: cover;
+  background-position: center;
+}
 
-  background-attachment: fixed;
-}
-.carousel-item1 {
-  background-image: url("../img/carousel1.webp");
-}
 .carousel-item2 {
   background-image: url("../img/carousel2.webp");
 }
@@ -96,6 +96,33 @@ Estilos Seccion Carrusel
   background-image: url("../img/carousel3.webp");
 }
 
+/*
+Se remueve propiedad background-attachment: fixed
+por generar problemas de salto de imagen. Reemplazo enfoque 
+usando position:fixed sobre div con background imagen y posteriormente
+aplico fondo blanco a secciones distintas de la seccion principal. Además
+background-attachment: fixed no tiene soporte en general navegadores
+*/
+.background_slider {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+section:not(#principal) {
+  background-color: white;
+}
+.background_slider1 {
+  background-image: url("../img/carousel1.webp");
+}
+.background_slider2 {
+  background-image: url("../img/carousel2.webp");
+}
+.background_slider3 {
+  background-image: url("../img/carousel3.webp");
+}
 .bullet {
   border-radius: 50%;
   width: 25px !important;
