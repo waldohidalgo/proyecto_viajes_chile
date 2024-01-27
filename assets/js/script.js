@@ -50,6 +50,22 @@ const tooltipTriggerList = [].slice.call(
 const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
+/*-----------------------------------------------------------------*/
+/*
+Habilitacion de tooltips (creacion de objetos tooltip)
+*/
+
+const tooltipNombreFooter = document.querySelector(".tooltip_nombre");
+
+function toolTipPersonalizado(tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl, {
+    trigger: "hover",
+    placement: "bottom",
+    template:
+      '<div class="tooltip tooltipNombreFooter" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+  });
+}
+toolTipPersonalizado(tooltipNombreFooter);
 
 /*-----------------------------------------------------------------*/
 /*
@@ -112,7 +128,7 @@ function popOverAutor(popoverTriggerEl) {
     placement: "top", // Puedes ajustar la posición según tus necesidades (top, bottom, left, right)
     html: true,
     template:
-      '<div class="popover popoverautor" ><h3 class="popover-header fw-bold text-dark"></h3><div class="popover-body"></div><div class="arrow"></div></div>',
+      '<div class="popover popoverautor" role="tooltip"><h3 class="popover-header fw-bold text-dark"></h3><div class="popover-body"></div><div class="arrow"></div></div>',
   });
 }
 

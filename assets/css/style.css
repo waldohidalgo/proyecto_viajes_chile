@@ -417,3 +417,16 @@ Estilos popover autor personalizado
     border-inline: 10px solid transparent;
   }
 }
+/*
+-----------------------------------------------------------------
+Tooltip personalizado en el footer
+*/
+
+.tooltipNombreFooter {
+  .tooltip-inner {
+    background-color: red !important;
+  }
+  .tooltip-arrow::before {
+    border-bottom-color: red !important;
+  }
+}
