@@ -88,7 +88,7 @@ window.onscroll = function () {
 };
 
 function mostrarOcultarBoton() {
-  var botonScroll = document.getElementById("scrollBtn");
+  const botonScroll = document.getElementById("scrollBtn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     botonScroll.style.display = "block";
   } else {
@@ -100,3 +100,20 @@ function scrollToTop() {
   document.body.scrollTop = 0; // Para navegadores Safari
   document.documentElement.scrollTop = 0; // Para navegadores Chrome, Firefox, IE y Opera
 }
+/*-----------------------------------------------------------------
+Habilitación de popover a elemento particular nombre de autor
+*/
+
+const botonAutor = document.querySelector(".popovernombre");
+
+function popOverAutor(popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl, {
+    trigger: "click", // Muestra el popover al pasar el ratón sobre el elemento
+    placement: "top", // Puedes ajustar la posición según tus necesidades (top, bottom, left, right)
+    html: true,
+    template:
+      '<div class="popover popoverautor" ><h3 class="popover-header fw-bold text-dark"></h3><div class="popover-body"></div><div class="arrow"></div></div>',
+  });
+}
+
+popOverAutor(botonAutor);
