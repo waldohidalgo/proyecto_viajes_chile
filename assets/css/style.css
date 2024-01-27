@@ -335,6 +335,10 @@ footer {
     font-family: var(--font-titulos-secciones);
     color: yellow;
   }
+  .autor:hover {
+    color: var(--color-bg);
+    cursor: pointer;
+  }
 }
 .footer-brand {
   font-family: var(--font-logo);
@@ -392,7 +396,7 @@ Estilos popover autor personalizado
 */
 .popoverautor {
   border: 0px !important;
-
+  background-color: transparent !important;
   h3 {
     background-color: var(--color-bg);
 
@@ -401,7 +405,7 @@ Estilos popover autor personalizado
   }
 
   .popover-body {
-    background-color: var(--color-bg-card);
+    background-color: white;
     border: 1px solid black;
     border-top: 0;
     text-align: center;
@@ -412,11 +416,4 @@ Estilos popover autor personalizado
     border-top: 10px solid var(--color-bg);
     border-inline: 10px solid transparent;
   }
-}
-
-.popovernombre:hover {
-  color: var(--color-bg);
-  background-color: black;
-  border-radius: 10px;
-  padding: 2px;
 }
