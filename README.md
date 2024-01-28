@@ -26,8 +26,17 @@ Los componentes de boostrap que he utilizado son los siguientes:
     <li>Card y las he personalizado</li>
     <li>Carousel el cual he personalizado en un 100%</li>
     <li>Navbar la cual he personalizado</li>
-    <li>Tooltips los cuales **no** he personalizado</li>
+    <li>Tooltips no personalizados y un tooltip personalizado ubicado en mi nombre en el footer</li>
+    <li>Popover personalizado ubicado en mi nombre en el footer</li>
 </ol>
+
+El tooltip que he personalizado es el siguiente:
+
+![Tooltip personalizado](./assets/img/screenshots/tooltip_personalizado.jpg)
+
+El popover que he personalizado es el siguiente:
+
+![Popover personalizado](./assets/img/screenshots/popover_personalizado.jpg)
 
 Además de lo anterior, he utilizado javascript para agregarle diversas funcionalidades adicionales:
 
@@ -55,3 +64,15 @@ Como se esta usando un navbar fijo, al hacer click sobre algún item del menú e
 La funcionalidad que he creado permite hacer click en un botón que se muestra cuando no se esta en el top de la página web de modo tal que permite subir al top de la página. Cuando se esta en el top de la página web el botón no se muestra, en todo el resto de posiciones de la página web el botón se muestra. La funcionalidad la creo realizando cálculos a partir de la API del DOM. El código es el siguiente:
 
 ![Botón Scroll Top](./assets/img/screenshots/funcionalidad_scroll_top.png)
+
+# 5. Tooltip personalizado
+
+He escrito el siguiente código siguiendo la documentación para crear un tooltip con estilos personalizados:
+
+![Código Tooltip personalizado](./assets/img/screenshots/tooltip_personalizado_codigo.png)
+
+# 6. Popover personalizado
+
+He escrito el siguiente código siguiendo la documentación para crear un popover con estilos personalizados:
+
+![Código Popover personalizado](./assets/img/screenshots/popover_personalizado_codigo.png)

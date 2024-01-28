@@ -52,7 +52,7 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 /*-----------------------------------------------------------------*/
 /*
-Habilitacion de tooltips (creacion de objetos tooltip)
+Creación de objeto tooltip personalizado
 */
 
 const tooltipNombreFooter = document.querySelector(".tooltip_nombre");
