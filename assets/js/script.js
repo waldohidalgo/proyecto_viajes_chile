@@ -3,7 +3,7 @@
 Padding top automatico igual a la altura del header
 */
 
-const headerNode = document.getElementsByClassName("navbar")[0];
+const headerNode = document.getElementsByClassName("navbar_altura")[0];
 
 function marginTopAuto(entries) {
   const elemento_entry = entries[0];
