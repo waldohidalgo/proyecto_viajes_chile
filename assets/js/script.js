@@ -3,7 +3,7 @@
 Padding top automatico igual a la altura del header
 */
 
-const headerNode = document.getElementsByClassName("navbar_altura")[0];
+const headerNode = document.getElementsByClassName("navbar")[0];
 
 function marginTopAuto(entries) {
   const elemento_entry = entries[0];
@@ -13,7 +13,7 @@ function marginTopAuto(entries) {
   }
 }
 
-// Crea una instancia de ResizeObserver con la función de callback
+// Crea un objeto ResizeObserver con la función de callback
 const resizeObserver = new ResizeObserver(marginTopAuto);
 
 // Observa el elemento
@@ -124,8 +124,8 @@ const botonAutor = document.querySelector(".popovernombre");
 
 function popOverAutor(popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl, {
-    trigger: "click", // Muestra el popover al pasar el ratón sobre el elemento
-    placement: "top", // Puedes ajustar la posición según tus necesidades (top, bottom, left, right)
+    trigger: "click",
+    placement: "top",
     html: true,
     template:
       '<div class="popover popoverautor" role="tooltip"><h3 class="popover-header fw-bold text-dark"></h3><div class="popover-body"></div><div class="arrow"></div></div>',
