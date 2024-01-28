@@ -335,7 +335,8 @@ footer {
 .footer-brand {
   font-family: var(--font-logo);
   font-size: 2rem !important;
-
+  margin: auto;
+  width: fit-content;
   img {
     width: 41px;
     vertical-align: text-top;
