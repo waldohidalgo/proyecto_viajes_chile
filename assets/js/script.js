@@ -22,6 +22,7 @@ resizeObserver.observe(headerNode);
 marginTopAuto([headerNode]);
 /*-----------------------------------------------------------------*/
 /*Aplicar formato a items de menu del navbar*/
+
 function selectoresItemsMenu(evento) {
   /*Eliminacion de clase estilo_menu a todos los elementos del menu*/
   const contenedorItemsMenu = document.querySelector(".navbar-nav");
@@ -33,6 +34,10 @@ function selectoresItemsMenu(evento) {
   const elementoSeleccionado = evento.target;
 
   elementoSeleccionado.parentElement.classList.add("estilo_menu");
+
+  if (window.innerWidth < 576) {
+    document.querySelector(".navbar-toggler").click();
+  }
 }
 const contenedorItemsMenu = document.querySelector(".navbar-nav");
 const itemsMenu = contenedorItemsMenu.children;
