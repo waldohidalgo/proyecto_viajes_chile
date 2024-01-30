@@ -111,9 +111,9 @@ window.onscroll = function () {
 function mostrarOcultarBoton() {
   const botonScroll = document.getElementById("scrollBtn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    botonScroll.style.display = "block";
+    botonScroll.style.opacity = "1";
   } else {
-    botonScroll.style.display = "none";
+    botonScroll.style.opacity = "0";
   }
 }
 
