@@ -7,7 +7,7 @@ El proyecto pide realizar lo descrito a continuación:
 ![Pagina 3 Requisitos](./assets/img/screenshots/requisitos3.jpg)
 ![Pagina 4 Requisitos](./assets/img/screenshots/requisitos4.jpg)
 
-He cumplido con **todo** lo solicitado e ido mucho más allá personalizando la mayoría de componentes de boostrap que he utilizado. Mi página web en pantallas grandes se ve de la siguiente manera:
+He cumplido con **todo** lo solicitado y he ido mucho más allá personalizando la mayoría de componentes de boostrap que he utilizado. Mi página web en pantallas grandes se ve de la siguiente manera:
 
 ![Pagina web pantallas grandes](./assets/img/screenshots/pantalla_grande.png)
 
