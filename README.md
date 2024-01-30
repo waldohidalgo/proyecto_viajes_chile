@@ -7,7 +7,7 @@ El proyecto pide realizar lo descrito a continuación:
 ![Pagina 3 Requisitos](./assets/img/screenshots/requisitos3.jpg)
 ![Pagina 4 Requisitos](./assets/img/screenshots/requisitos4.jpg)
 
-He cumplido con **todo** lo solicitado y he ido mucho más allá personalizando la mayoría de componentes de boostrap que he utilizado. Mi página web en pantallas grandes se ve de la siguiente manera:
+He cumplido con **todo** lo solicitado y he ido mucho más allá personalizando la mayoría de componentes de bootstrap que he utilizado. Mi página web en pantallas grandes se ve de la siguiente manera:
 
 ![Pagina web pantallas grandes](./assets/img/screenshots/pantalla_grande.png)
 
@@ -15,7 +15,7 @@ Y en pantallas pequeñas se ve de la siguiente manera:
 
 ![Pagina web pantallas grandes](./assets/img/screenshots/pantalla_small.png)
 
-He utilizado la librería Boostrap 5, he utilizando iconos de FontAwesome e imagenes del sitio web Icons8 junto con las familias de fonts Caveat, Lato, Playfair y Vollkorn obtenidas desde google fonts.
+He utilizado la librería Bootstrap 5, he utilizando iconos de FontAwesome e imagenes del sitio web Icons8 junto con las familias de fonts Caveat, Lato, Playfair y Vollkorn obtenidas desde google fonts.
 
 Los componentes de boostrap que he utilizado son los siguientes:
 
