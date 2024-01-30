@@ -224,10 +224,12 @@ Estilos para quienes somos contenedor iconos e hijos
 */
 .quienes_somos_contenedor_parrafos {
   gap: 10px;
-  .col {
-    width: calc(33% - 10px);
-    text-align: center;
-    max-width: 400px;
+  text-align: center;
+  .columna {
+    @media screen and (min-width: 576px) {
+      max-width: 400px;
+      width: calc(33% - 10px);
+    }
   }
   .quienes_somos_contenedor_parrafos_icono {
     border: 1px solid black;
@@ -244,6 +246,7 @@ Estilos para quienes somos contenedor iconos e hijos
     border-bottom-left-radius: 10px;
     background-color: #eeedeb;
     padding: 10px 5px;
+    margin: 0;
   }
 }
 
